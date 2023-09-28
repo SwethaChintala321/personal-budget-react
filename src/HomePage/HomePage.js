@@ -1,4 +1,19 @@
+/* eslint-disable no-undef */
 import React from "react";
+import PieChart from "../Chart/PieChart";
+import DonutChart from "../Chart/DonutChart";
+
+
+const data = [
+    {name: "Eat Out", value: 30},
+    {name: "Rent", value: 200},
+    {name: "Groceries", value: 90},
+    {name: "College", value: 350},
+    {name: "Movies", value: 30},
+    {name: "Aesthetics", value: 40},
+    {name: "Travel", value: 50},
+   ]
+   
 
 function HomePage() {
   return (
@@ -61,16 +76,13 @@ function HomePage() {
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </article>
-    
+            </article>    
             <article>
                 <h1>Chart1</h1>
-                <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                </p>
+                <PieChart/>
             </article>
-            <button className="randomize">randomize</button>
                 <h1>Chart2</h1>
+                <DonutChart data={data}  />
         </div>
 
     </main>

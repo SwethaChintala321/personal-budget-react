@@ -16,7 +16,6 @@ function Menu() {
         <li><Link itemProp="url" to="/">Home</Link></li>
         <li><Link itemProp="url" to="/about">About</Link></li>
         <li><Link itemProp="url" to="/login">Login</Link></li>
-        <li><a href="https://google.com">Google</a></li>
     </ul>
 </nav>
   );
